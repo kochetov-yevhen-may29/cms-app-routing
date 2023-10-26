@@ -29,7 +29,6 @@ function App() {
       </nav>
       <Suspense fallback={<h1 className="text-center text-2xl text-orange-300">Loading...</h1>}>
         <Routes>
-          {/* After deploying the app, the base path changed to cms-app-routing/, so I changed the normal / to cms-app-routing/*/}
           <Route path="/" element={<Navigate to="/dummyTable" />} />
           <Route path="/dummyTable" Component={DummyTable} />
           <Route path="/dummyChart" Component={DummyChart} />
